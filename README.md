@@ -67,3 +67,26 @@ The API will be available at:
 **Environment variables not found:**
 - Make sure `.env` file exists in the backend folder
 - Check that SUPABASE_URL and SUPABASE_KEY are set correctly
+
+### Running python scraper to add data to Supabase:
+
+1 **Install the following packages**
+
+```bash
+   import requests
+   from bs4 import BeautifulSoup
+   import re
+   import json
+   import time
+   import os
+   from supabase import create_client, Client
+```
+
+2 **Run python file**
+
+```bash
+   python scrape.py
+```
+
+3 **When prompted, enter URL of the site you want to scrape**
+
