@@ -1,4 +1,4 @@
-3629
+3619
 55C:\Users\Ethan\Documents\Code\News2Lang\frontend\public134031426642454641 1
 88C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\node-releases\package.json134031424941324061 0
 111C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\es6-string-includes.js134031425083069697 0
@@ -41,7 +41,7 @@
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\transformer-postcss\src134031424974500471 1
 107C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\mutation-events.js134031425112142762 0
 87C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\namer-default\src134031424950696824 1
-61C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules134032371978358311 1
+61C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules134032386593510263 1
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\utils\test\input\config134031425054081419 1
 82C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\type-fest\index.d.ts134031424998797285 0
 61C:\Users\Ethan\Documents\Code\News2Lang\frontend\package.json134031426015586579 0
@@ -52,10 +52,10 @@
 71C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\commander134031424993656907 1
 78C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\is-glob\index.js134031424925731753 0
 85C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\rust\index.d.ts134031424979548260 0
-80C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\.package-lock.json134032371978363408 0
+80C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\.package-lock.json134032386596361372 0
 111C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\core\test\fixtures\custom-format-mismatch134032371955793973 1
 82C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\packager-raw134031424953327792 1
-66C:\Users\Ethan\Documents\Code\News2Lang\frontend\package-lock.json134032371977324018 0
+66C:\Users\Ethan\Documents\Code\News2Lang\frontend\package-lock.json134032386595564794 0
 112C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\css-overflow-overlay.js134031425069144096 0
 80C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\source-map134031425045110717 1
 118C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\msgpackr-extract\node_modules\detect-libc\lib\process.js134031424951241146 0
@@ -122,8 +122,8 @@
 66C:\Users\Ethan\Documents\Code\News2Lang\frontend\public\index.html134031428753815152 0
 68C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lezer134032371972172630 1
 64C:\Users\Ethan\Documents\Code\News2Lang\frontend\public\index.js134031428478254792 0
-67C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb134032371971700606 1
-79C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract134032371971700606 1
+67C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb134032386593818104 1
+79C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract134032386593792005 1
 86C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\profiler\LICENSE134031424931558840 0
 106C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\esm\_class_private_field_get.js134031425050820295 0
 102C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\hashchange.js134031425091457249 0
@@ -131,12 +131,12 @@
 72C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\picocolors134031424956829194 1
 97C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\utility-types\dist\utility-types.js134031424953936122 0
 70C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\has-flag134031424945155823 1
-69C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel134032371974817058 1
+69C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel134032386593766513 1
 110C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\insertadjacenthtml.js134031425100457060 0
 113C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\src\_class_private_field_loose_key.mjs134031425091150780 0
 87C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\scheduler\index.native.js134031423985645676 0
 107C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\abortcontroller.js134031424940277397 0
-66C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc134032371971620246 1
+66C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc134032386593605308 1
 104C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\core\test\fixtures\parcel\index.js134032371947268086 0
 102C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\rust-win32-x64-msvc\package.json134031424939175952 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\GT.js134031425090962140 0
@@ -619,7 +619,6 @@
 77C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\is-glob\LICENSE134031424918695561 0
 87C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\core\src\index.js134032371947001149 0
 91C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\baseline-browser-mapping\dist134032371939527583 1
-85C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-darwin-arm64134032386592802352 1
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\type-fest\source\utilities.d.ts134031425019138184 0
 96C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\avif.js134031425023946941 0
 79C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\tslib\LICENSE.txt134031424991165771 0
@@ -1496,7 +1495,6 @@
 106C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\esm\_tagged_template_literal.js134031425063273082 0
 98C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\esm\_new_arrow_check.js134031425059824391 0
 111C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\crypto.c134032371942751825 0
-108C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-linux-arm64134032386592336815 1
 99C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\runtime-js\src\helpers\worker134031425020459786 1
 111C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Doxyfile134032371939316673 0
 112C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\intro.doc134032371949138194 0
@@ -1902,7 +1900,6 @@
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\MQ.js134031425111577978 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\MR.js134031425111648765 0
 109C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\features\namevalue-storage.js134031425112645487 0
-109C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-darwin-arm64134032386592802352 1
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\MS.js134031425111724677 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\MU.js134031425111806411 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\MV.js134031425112283462 0
@@ -1990,7 +1987,6 @@
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\utils\src\collection.js134031424981107911 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\UA.js134031425126755675 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\UG.js134031425126807529 0
-106C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-linux-x64134032386592357044 1
 97C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\esm\_async_iterator.js134031425045898237 0
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\caniuse-lite\data\regions\UZ.js134031425127460224 0
 94C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\_\_get\package.json134031425076989261 0
@@ -2939,7 +2935,6 @@
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\cjs\_using_ctx.cjs134031425040484731 0
 104C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\cjs\_wrap_async_generator.cjs134031425041139067 0
 101C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\cjs\_wrap_native_super.cjs134031425041312461 0
-82C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-linux-x64134032386592290576 1
 91C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\workers\lib\Handle.js134031425002908157 0
 100C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\helpers\cjs\_write_only_error.cjs134031425041484618 0
 87C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@swc\counter\CHANGELOG.md134031424925731753 0
@@ -3577,7 +3572,6 @@
 105C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\compressor-raw\src\RawCompressor.js134032371937187162 0
 105C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\compressor-raw\lib\RawCompressor.js134032371936810546 0
 84C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\codeframe\test134032371941989709 1
-106C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-linux-arm134032386592321134 1
 102C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\codeframe\test\codeframe.test.js134032371942072205 0
 98C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\codeframe\test\fixtures\a.js134032371936872531 0
 96C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\codeframe\src\codeframe.js134032371941928064 0
@@ -3594,16 +3588,12 @@
 88C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\cache\lib\types.js134032371940113997 0
 89C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\bundler-default\lib134032371936779972 1
 93C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@parcel\bundler-default\LICENSE134032371936523357 0
-107C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-darwin-x64134032386592290576 1
 115C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\index.js134032371936415763 0
 116C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\README.md134032371936908591 0
 86C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@mischnic\json-sourcemap134032371937241719 1
 91C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@mischnic\json-sourcemap\dist134032371938415888 1
 94C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@mischnic\json-sourcemap\LICENSE134032371936562799 0
 105C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@mischnic\json-sourcemap\dist\index.js.flow134032371938486781 0
-83C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-darwin-x64134032386592802352 1
-82C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-linux-arm134032386592280505 1
-84C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-linux-arm64134032386592280505 1
 91C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-win32-x64\index.js134032371936436248 0
 99C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-win32-x64\node.abi108.node134032371939421201 0
 97C:\Users\Ethan\Documents\Code\News2Lang\frontend\node_modules\@lmdb\lmdb-win32-x64\node.napi.node134032371943022711 0

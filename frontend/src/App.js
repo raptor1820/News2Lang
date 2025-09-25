@@ -56,7 +56,7 @@ const questions = [
 // The main component for the app
 export default function App() {
     return ( <div>
-        <h1>Hello world!</h1>
+        <h1>Lesson</h1>
         <VocabList list={vocab} />
         <NoteList list={notes} />
         <ExSentenceList list={exSentences} />

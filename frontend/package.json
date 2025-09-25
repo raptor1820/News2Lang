@@ -31,6 +31,9 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "parcel": "^2.16.0"
+    "autoprefixer": "^9.8.8",
+    "parcel": "^2.16.0",
+    "postcss": "^7.0.39",
+    "tailwindcss": "file:np.:@tailwindcss/postcss7-compat"
   }
 }

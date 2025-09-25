@@ -16228,7 +16228,7 @@ function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Hello world!"
+                children: "Lesson"
             }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 59,
@@ -18794,6 +18794,97 @@ $RefreshReg$(_c, "Quiz");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{}]},["aHKws","d0NX4"], "d0NX4", "parcelRequirec027", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./QuizQuestion":"gaxEx"}],"gaxEx":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$6325 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$6325.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6325.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>QuizQuestion);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+// enum to represent state of display message
+const CorrectStateEnum = Object.freeze({
+    NO_DISPLAY: 0,
+    INCORRECT: 1,
+    CORRECT: 2
+});
+// time to show "incorrect" upon incorrect answer in milliseconds
+const INCORRECT_DELAY = 2000;
+function QuizQuestion({ question }) {
+    _s();
+    const [correctState, setCorrectState] = (0, _reactDefault.default).useState(CorrectStateEnum.NO_DISPLAY);
+    // onClick callback for incorrect answers
+    function showIncorrect() {
+        setCorrectState(CorrectStateEnum.INCORRECT);
+        setTimeout(()=>{
+            setCorrectState(CorrectStateEnum.NO_DISPLAY);
+        }, INCORRECT_DELAY);
+    }
+    // onClick callback for correct answers
+    function showCorrect() {
+        setCorrectState(CorrectStateEnum.CORRECT);
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: question.text
+            }, void 0, false, {
+                fileName: "src/QuizQuestion.js",
+                lineNumber: 31,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ol", {
+                children: question.options.map((option, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        onClick: option.correct ? showCorrect : showIncorrect,
+                        children: option.text
+                    }, i, false, {
+                        fileName: "src/QuizQuestion.js",
+                        lineNumber: 33,
+                        columnNumber: 50
+                    }, this))
+            }, void 0, false, {
+                fileName: "src/QuizQuestion.js",
+                lineNumber: 32,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: correctState == CorrectStateEnum.INCORRECT && "Incorrect"
+            }, void 0, false, {
+                fileName: "src/QuizQuestion.js",
+                lineNumber: 35,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: correctState == CorrectStateEnum.CORRECT && "Correct"
+            }, void 0, false, {
+                fileName: "src/QuizQuestion.js",
+                lineNumber: 36,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/QuizQuestion.js",
+        lineNumber: 30,
+        columnNumber: 14
+    }, this);
+}
+_s(QuizQuestion, "41zpPeNQjJbcAPIS6S5KRYQT+m8=");
+_c = QuizQuestion;
+var _c;
+$RefreshReg$(_c, "QuizQuestion");
+
+  $parcel$ReactRefreshHelpers$6325.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["aHKws","d0NX4"], "d0NX4", "parcelRequirec027", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=public.4211bbe3.js.map
