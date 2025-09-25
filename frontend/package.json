@@ -1,0 +1,36 @@
+{
+  "name": "news2lang-frontend",
+  "version": "1.0.0",
+  "description": "The front end for News2Lang, a language-learning site developed by a WebDev@GT team at Georgia Tech",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raptor1820/News2Lang.git"
+  },
+  "keywords": [
+    "language",
+    "news",
+    "AI",
+    "learning",
+    "website",
+    "site",
+    "webscraping",
+    "scraping"
+  ],
+  "author": "News2Lang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raptor1820/News2Lang/issues"
+  },
+  "homepage": "https://github.com/raptor1820/News2Lang#readme",
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
