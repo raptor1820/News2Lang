@@ -19,14 +19,22 @@ export default async function ArticlesPage({
   const articles = await getArticle();
   const searchTerm = searchParams?.search?.toLowerCase() || "";
   const selectedLang = searchParams?.lang || "";
-
-  const filteredArticles = articles.filter((article) => {
-    const matchesSearch =
-      article.title.toLowerCase().includes(searchTerm) ||
-      article.preview.toLowerCase().includes(searchTerm);
-    const matchesLang = selectedLang ? article.language === selectedLang : true;
-    return matchesSearch && matchesLang;
-  });
+  const filteredArticles = articles
+    .filter((article) => {
+      if (selectedLang) {
+        return article.language === selectedLang;
+      }
+      return true;
+    })
+    .filter((article) => {
+      if (searchTerm) {
+        return (
+          article.title.toLowerCase().includes(searchTerm) ||
+          article.preview.toLowerCase().includes(searchTerm)
+        );
+      }
+      return true;
+    });
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="text-center mb-10">

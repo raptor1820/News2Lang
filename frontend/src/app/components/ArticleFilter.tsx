@@ -2,7 +2,7 @@
 //create search function and dropdown languae fnc
 "use client";
 
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { Language } from "../type";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
@@ -39,13 +39,15 @@ export const ArticleFilter = () => {
       <input
         type="text"
         placeholder="Search articles by title..."
+        defaultValue={searchParams.get("search")?.toString()}
         onChange={(e) => handleSearch(e.target.value)}
         className="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
       <select
         onChange={handleLanguageChange}
-        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none foucs:ring-2 foucs:ring-blue-500"
+        defaultValue={searchParams.get("lang")?.toString()}
+        className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 foucs:ring-blue-500"
       >
         <option value="">All Language</option>
         {Object.entries(Language).map(([key, value]) => (
