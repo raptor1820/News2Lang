@@ -1,5 +1,7 @@
 //this will be the main page
 
+import { ArticleFilter } from "../components/ArticleFilter";
+
 export default async function ArticlesPage() {
   return (
     <main className="container mx-auto px-4 py-8">
@@ -13,6 +15,8 @@ export default async function ArticlesPage() {
           Select a news article to begin your journey!!
         </p>
       </div>
+
+      <ArticleFilter />
     </main>
   );
 }
