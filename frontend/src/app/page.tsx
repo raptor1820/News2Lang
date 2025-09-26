@@ -1,3 +1,9 @@
+import ArticlesPage from "./articles/ArticlesPage";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <ArticlesPage />
+    </div>
+  );
 }
