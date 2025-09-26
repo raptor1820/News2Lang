@@ -2,11 +2,38 @@
 //create search function and dropdown languae fnc
 "use client";
 
+import { useRouter } from "next/router";
 import { Language } from "../type";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useDebouncedCallback } from "use-debounce";
 
 export const ArticleFilter = () => {
-  const handleSearch = (e) => {};
-  const handleLanguageChange = () => {};
+  const router = useRouter();
+  const pathName = usePathname();
+  const searchParams = useSearchParams();
+
+  //wait for 300ms to type
+  const handleSearch = useDebouncedCallback((searchValue: string) => {
+    const params = new URLSearchParams(searchParams);
+    if (searchValue) {
+      params.set("search", searchValue);
+    } else {
+      params.delete("search");
+    }
+    router.replace(`${pathName}?${params.toString()}`);
+  }, 300);
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const language = e.target.value;
+    const params = new URLSearchParams(searchParams);
+    if (language) {
+      params.set("lang", language);
+    } else {
+      params.delete("lang");
+    }
+    router.replace(`${pathName}?${params.toString()}`);
+  };
+
   return (
     <div className="flex flex-col sm:flex-row gap-4 mb-8">
       <input
