@@ -7,10 +7,10 @@ export enum Language {
 }
 
 //id, title, language, preview, level
-export interface Aritcle {
-  id: string;
+export interface Article {
+  id: number;
   title: string;
   language: Language;
   preview: string;
-  level: "beginner" | "itermidiate" | "advanced";
+  level: "beginner" | "intermediate" | "advanced";
 }

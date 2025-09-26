@@ -1,6 +1,6 @@
 //create a mock backend to test frontend later
 
-import { Language } from "../type";
+import { Language, Article } from "../type";
 
 //create mock database
 const mockArticles: Article[] = [
