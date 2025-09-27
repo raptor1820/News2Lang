@@ -1,0 +1,70 @@
+import React from 'react';
+import { Link } from 'react-router';
+import VocabList from '../components/VocabList';
+import NoteList from '../components/NoteList';
+import ExSentenceList from '../components/ExSentenceList';
+import Quiz from '../components/Quiz';
+import Navbar from '../components/Navbar';
+
+// dummy data for use before we connect to backend
+const vocab = ["cat", "dog", "pizza", "explosion", "person", "cheese", "hyperbolic cosine"];
+const notes = ["Use the imperfect tense for repeated past actions", "Comma splices are sometimes legal, unlike in English", "Use 'conocer' to mean 'to know' as in being familiar with someone/thing, and use 'saber' to mean 'to know' as in possessing information"];
+const exSentences = ["Me encanta tu gato.", "Vamos al parque.", "Todo sería diferente si tú me quisieras."];
+const questions = [
+    {
+        text: "Which of the following sentences is grammatically incorrect?",
+        options: [
+            {
+                text: "Me encantan sus parientes.",
+                correct: false
+            },
+            {
+                text: "Me encanta cuándo me llamas señorita.",
+                correct: false
+            },
+            {
+                text: "Lo encanta el pastel amarillo.",
+                correct: false
+            },
+            {
+                text: "Te encantas el libro.",
+                correct: true
+            }
+        ]
+    },
+    {
+        text: "Which of the following sentences should use the imperfect tense when translated to Spanish?",
+        options: [
+            {
+                text: "I'm doing my homework right now.",
+                correct: false
+            },
+            {
+                text: "Jose called me all of a sudden.",
+                correct: false
+            },
+            {
+                text: "You didn't go to work today.",
+                correct: false
+            },
+            {
+                text: "They ate at a restaurant every week.",
+                correct: true
+            }
+        ]
+    }
+];
+
+
+
+
+// The component for the Lesson page
+export default function Lesson() {
+    return ( <div>
+        <Navbar />
+        <VocabList list={vocab} />
+        <NoteList list={notes} />
+        <ExSentenceList list={exSentences} />
+        <Quiz questions={questions} />
+    </div> );
+}
