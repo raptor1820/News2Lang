@@ -1,2 +1,2 @@
 # News2Lang
-# Calvin F. Initial PR
+# Calvin F. Backend - Endpoints for frontend
