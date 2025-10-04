@@ -11,6 +11,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/lesson/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/lesson/page.js"
+    ],
     "/articles/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
