@@ -103,7 +103,7 @@ python run.py
 The API will be available at:
 - **API Root**: http://localhost:8000
 - **API Test**: http://localhost:8000/articles
-- **Interactive Docs**: http://localhost:8000/docsp
+- **Interactive Docs**: http://localhost:8000/docs
 
 ### Troubleshooting
 
@@ -115,7 +115,6 @@ The API will be available at:
 **Environment variables not found:**
 - Make sure `.env` file exists in the backend folder
 - Check that SUPABASE_URL and SUPABASE_KEY are set correctly
-
 ### Running python scraper to add data to Supabase:
 
 1 **Install the following packages**
@@ -137,4 +136,3 @@ The API will be available at:
 ```
 
 3 **When prompted, enter URL of the site you want to scrape**
-
