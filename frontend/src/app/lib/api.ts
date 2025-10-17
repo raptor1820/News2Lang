@@ -5,7 +5,7 @@ import { Language, Article } from "../type";
 //create mock database
 const mockArticles: Article[] = [
   {
-    id: 1,
+    id: "1",
     title: "El Clásico: Una Rivalidad Histórica",
     language: Language.Spanish,
     preview:
@@ -13,7 +13,7 @@ const mockArticles: Article[] = [
     level: "intermediate",
   },
   {
-    id: 2,
+    id: "2",
     title: "Le Tour de France: Plus Qu'une Course",
     language: Language.French,
     preview:
@@ -21,7 +21,7 @@ const mockArticles: Article[] = [
     level: "beginner",
   },
   {
-    id: 3,
+    id: "3",
     title: "Die Berliner Mauer: Geschichte und Gedenken",
     language: Language.German,
     preview:
@@ -29,7 +29,7 @@ const mockArticles: Article[] = [
     level: "advanced",
   },
   {
-    id: 4,
+    id: "4",
     title: "日本の桜：文化と伝統",
     language: Language.Japanese,
     preview:
@@ -37,7 +37,7 @@ const mockArticles: Article[] = [
     level: "intermediate",
   },
   {
-    id: 5,
+    id: "5",
     title: "La Gastronomía de Perú: Sabores que Conquistan",
     language: Language.Spanish,
     preview:
@@ -45,7 +45,7 @@ const mockArticles: Article[] = [
     level: "beginner",
   },
   {
-    id: 6,
+    id: "6",
     title: "Le Louvre : Un Voyage à Travers l'Art",
     language: Language.French,
     preview:
@@ -54,7 +54,7 @@ const mockArticles: Article[] = [
   },
 ];
 
-export const getArticle = async (): Promise<Article[]> => {
+export const getArticles = async (): Promise<Article[]> => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   return mockArticles;
 };

@@ -4,11 +4,11 @@
 import { Article } from "../type";
 import { ArticleCard } from "./ArticleCard";
 
-export const ArticleList = ({ article }: { article: Article[] }) => {
-  if (article.length === 0) {
+export const ArticleList = ({ articles }: { articles: Article[] }) => {
+  if (articles.length === 0) {
     return (
-      <div className="text-cenetr py-12">
-        <h2 className="text-2xl fonr-semibold text-gray-700">
+      <div className="text-center py-12">
+        <h2 className="text-2xl font-semibold text-gray-700">
           No Articles Found
         </h2>
         <p className="text-gray-500 mt-3">
@@ -21,7 +21,7 @@ export const ArticleList = ({ article }: { article: Article[] }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {article.map((article) => (
+      {articles.map((article) => (
         <ArticleCard key={article.id} article={article} />
       ))}
     </div>

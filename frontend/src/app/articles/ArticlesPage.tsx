@@ -5,7 +5,7 @@ import { ArticleFilter } from "../components/ArticleFilter";
 import { LoadingSpinner } from "../loading/LoadingSpinner";
 import { ArticleList } from "../components/ArticleList";
 import { Language } from "../type";
-import { getArticle } from "../lib/api";
+import { getArticles } from "../lib/api";
 
 interface ArticlesPageProps {
   searchParams?: {
@@ -16,7 +16,7 @@ interface ArticlesPageProps {
 export default async function ArticlesPage({
   searchParams,
 }: ArticlesPageProps) {
-  const articles = await getArticle();
+  const articles = await getArticles();
   const searchTerm = searchParams?.search?.toLowerCase() || "";
   const selectedLang = searchParams?.lang || "";
   const filteredArticles = articles
@@ -51,7 +51,7 @@ export default async function ArticlesPage({
       <ArticleFilter />
 
       <Suspense fallback={<LoadingSpinner />}>
-        <ArticleList article={filteredArticles} />
+        <ArticleList articles={filteredArticles} />
       </Suspense>
     </main>
   );

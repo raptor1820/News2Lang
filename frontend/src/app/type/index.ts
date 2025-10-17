@@ -8,7 +8,7 @@ export enum Language {
 
 //id, title, language, preview, level
 export interface Article {
-  id: number;
+  id: string;
   title: string;
   language: Language;
   preview: string;
