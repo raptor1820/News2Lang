@@ -7,8 +7,9 @@ class LessonCreate(BaseModel):
     article_id: int  # Changed from str to int
     title: str
     content: str
-    vocabulary: List[dict]  # [{word: str, definition: str, example: str}]
+    vocabulary: List[dict]  # [{word: str, definition: str, example: str, translation: Optional[str]}]
     grammar_points: List[str]
+    cultural_notes: Optional[List[str]] = []
     difficulty: DifficultyLevel
     estimated_time_minutes: int
 

@@ -88,6 +88,7 @@ A language learning platform that transforms news articles into interactive less
    ```env
    SUPABASE_URL=https://your-project.supabase.co
    SUPABASE_KEY=your-anon-key-here
+   OPENAI_API_KEY=your-openai-api-key-here
    ```
 
 ### Running the Server
@@ -104,6 +105,7 @@ The API will be available at:
 - **API Root**: http://localhost:8000
 - **API Test**: http://localhost:8000/articles
 - **Interactive Docs**: http://localhost:8000/docsp
+- **Interactive Docs**: http://localhost:8000/docs
 
 ### Troubleshooting
 
@@ -138,3 +140,23 @@ The API will be available at:
 
 3 **When prompted, enter URL of the site you want to scrape**
 
+## Features
+
+### AI-Powered Lesson Generator
+
+Transform news articles into comprehensive language learning lessons with a single API call.
+
+**Endpoint:** `POST /articles/{article_id}/generate-lesson`
+
+**What it generates:**
+- Vocabulary items with definitions, examples, and translations
+- Grammar points relevant to the article
+- Cultural notes for context
+- Interactive quiz questions
+
+**Database Migration Required:**
+```sql
+ALTER TABLE lessons ADD COLUMN cultural_notes jsonb DEFAULT '[]';
+```
+
+See API documentation at http://localhost:8000/docs for full details.
