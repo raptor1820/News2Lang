@@ -1,4 +1,4 @@
-// File: C:\Users\isaac\Desktop\News2Lang\app\layout.tsx
+// File: C:\Users\gemc\Documents\Projects\News2Lang\News2Lang\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
