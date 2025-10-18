@@ -79,3 +79,10 @@ Thumbs.db
 .pytest_cache/
 instance/
 .webassets-cache
+
+# Dependencies
+node_modules/
+
+# .env files
+.env
+.env.local

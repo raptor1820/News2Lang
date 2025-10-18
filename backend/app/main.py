@@ -1,11 +1,10 @@
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Dict
+from typing import List
 from datetime import datetime
 
 from .database import get_supabase_client
-from .models import Article, ArticleCreate, Lesson, LessonCreate, Quiz, QuizCreate, Question
-from .llm_service import generate_lesson_from_article
+from .models import Article, ArticleCreate, Lesson, LessonCreate, Quiz, QuizCreate
 
 app = FastAPI(title="News2Lang API", version="1.0.0")
 
