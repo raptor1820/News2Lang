@@ -2,6 +2,54 @@
 
 A language learning platform that transforms news articles into interactive lessons and quizzes.
 
+## Frontend Setup & Running (Next.js)
+
+### Prerequisites
+- **Node.js 18+** (recommended: use the latest LTS version)
+- **npm** or **yarn** package manager
+
+### Installation & Setup
+
+1. **Install dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Open your browser**:
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+
+### Available Scripts
+
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint to check for code issues
+
+### Project Structure
+
+```
+├── app/                    # Next.js App Router pages
+│   ├── articles/          # Articles page
+│   ├── lessons/           # Lessons page
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles
+├── components/            # Reusable React components
+│   └── Navigation.tsx     # Navigation component
+├── backend/               # Python FastAPI backend
+├── scraper/               # Python web scraper
+└── package.json           # Node.js dependencies
+```
+
 ## Backend Setup & Running
 
 ### Prerequisites
@@ -40,6 +88,7 @@ A language learning platform that transforms news articles into interactive less
    ```env
    SUPABASE_URL=https://your-project.supabase.co
    SUPABASE_KEY=your-anon-key-here
+   OPENAI_API_KEY=your-openai-api-key-here
    ```
 
 ### Running the Server
@@ -55,6 +104,7 @@ python run.py
 The API will be available at:
 - **API Root**: http://localhost:8000
 - **API Test**: http://localhost:8000/articles
+- **Interactive Docs**: http://localhost:8000/docsp
 - **Interactive Docs**: http://localhost:8000/docs
 
 ### Troubleshooting
@@ -90,3 +140,23 @@ The API will be available at:
 
 3 **When prompted, enter URL of the site you want to scrape**
 
+## Features
+
+### AI-Powered Lesson Generator
+
+Transform news articles into comprehensive language learning lessons with a single API call.
+
+**Endpoint:** `POST /articles/{article_id}/generate-lesson`
+
+**What it generates:**
+- Vocabulary items with definitions, examples, and translations
+- Grammar points relevant to the article
+- Cultural notes for context
+- Interactive quiz questions
+
+**Database Migration Required:**
+```sql
+ALTER TABLE lessons ADD COLUMN cultural_notes jsonb DEFAULT '[]';
+```
+
+See API documentation at http://localhost:8000/docs for full details.
