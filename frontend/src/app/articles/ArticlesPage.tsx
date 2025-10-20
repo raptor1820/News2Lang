@@ -5,7 +5,7 @@ import { ArticleFilter } from "../components/ArticleFilter";
 import { LoadingSpinner } from "../loading/LoadingSpinner";
 import { ArticleList } from "../components/ArticleList";
 import { Language } from "../type";
-import { getArticles } from "../lib/api";
+// import { getArticles } from "../lib/api";
 
 interface ArticlesPageProps {
   searchParams?: {
