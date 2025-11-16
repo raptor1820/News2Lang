@@ -3,11 +3,17 @@
 export default function GrammarNote(props: {
     displayIndex: number,
     hasMargin: boolean,
-    children: string
+    children: string,
+    onHoverStart: () => void,
+    onHoverEnd: () => void
 }) {
-    const outerStyle = `relative${props.hasMargin ? " mb-4" : ""}`;
-    return ( <div className={outerStyle}>
+    const outerStyle = `cursor-default relative${props.hasMargin ? " mb-4" : ""}`;
+    return ( <div
+        className={outerStyle}
+        onMouseEnter={props.onHoverStart}
+        onMouseLeave={props.onHoverEnd}
+    >
         <p className="text-lg absolute -top-[3px]">{props.displayIndex}.</p>
-        <p className="pl-8">{props.children}</p>
+        <p className="pl-8 hover:bg-[yellow]">{props.children}</p>
     </div> );
 }
