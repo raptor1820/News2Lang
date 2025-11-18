@@ -5,6 +5,7 @@ import Title from './components/Title';
 import Flags from './components/Flags';
 import VocabList from './components/VocabList';
 import NoteList from './components/NoteList';
+import CultureNotes from './components/CultureNotes';
 import Article from './components/Article';
 import Engage from './components/Engage';
 
@@ -21,7 +22,11 @@ type lessonSchema = {
     grammar_points: Array<{
         text: string,
         sentenceRef: number
-    }>
+    }>,
+    culture_notes: Array<{
+        text: string,
+        sentenceRef: number
+    }>,
     difficulty: string,
     estimated_time_minutes: number,
     id: number,
@@ -52,6 +57,24 @@ const dummyLesson : lessonSchema = {
         {
             text: "The present-tense conjugation pattern for regular -ar verbs is: -o, -as, -a, -amos, -áis, -an.",
             sentenceRef: 0
+        },
+    ],
+    culture_notes: [
+        {
+            text: "In Spanish-speaking countries, the concept of 'casa' (home) is deeply valued as a family gathering place where multiple generations often live together or visit regularly.",
+            sentenceRef: 1
+        },
+        {
+            text: "Spanish children often enjoy outdoor play in 'jardines' (gardens or parks), which are important community spaces for socializing and recreation.",
+            sentenceRef: 3
+        },
+        {
+            text: "Education is highly valued in Hispanic cultures, and attending 'la escuela' (school) is seen as essential for personal and family advancement.",
+            sentenceRef: 4
+        },
+        {
+            text: "In many Spanish-speaking regions, spending time with friends and family at parks is a common daily social activity, especially in the afternoon.",
+            sentenceRef: 5
         },
     ],
     difficulty: "beginner",
@@ -121,6 +144,7 @@ export default function Lesson() {
         <div className="flex flex-grow items-stretch gap-12 mt-10">
             <VocabList list={dummyLesson.vocabulary} setSentenceHighlight={setSentenceHighlight} />
             <NoteList list={dummyLesson.grammar_points} setSentenceHighlight={setSentenceHighlight} />
+            <CultureNotes list={dummyLesson.culture_notes} setSentenceHighlight={setSentenceHighlight} />
         </div>
         <Engage quiz={dummyQuiz} />
     </div> );
