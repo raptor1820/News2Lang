@@ -2,9 +2,9 @@ import GrammarNote from './GrammarNote';
 
 // the component that displays the grammar notes for the current lesson
 export default function NoteList(props : {list: Array<{text: string, sentenceRef: number}>, setSentenceHighlight : (sentence: number) => void}) {
-    return ( <div className="flex flex-col text-black w-1/3">
+    return ( <div className="flex flex-col text-black w-full">
         <p className="text-2xl text-center mb-1">Grammar notes</p>
-        <div className="grow bg-gray-200 border-y-4 border-y-red-500 p-5 shadow-md">
+        <div className="grow bg-gray-100 rounded-lg p-5 shadow">
             <ol className="">
                 {props.list.map((note, i, arr) => 
                     <GrammarNote

@@ -34,7 +34,7 @@ export default function QuizQuestion(
     }
 
     return ( <div className="text-black">
-        <div className="flex gap-2 bg-yellow-300 p-2 mb-4 border-t-4 border-gray-600">
+        <div className="flex gap-2 bg-blue-300 p-2 mb-4 border-t-4 border-gray-600">
             <p className="text-lg ml-4 text-gray-700">{props.displayIndex}.</p>
             <p className="text-lg">{props.question.question}</p>
         </div>

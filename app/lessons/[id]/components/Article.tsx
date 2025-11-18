@@ -31,20 +31,35 @@ function splitIntoSentences(input: string): string[] {
     return returnVal;
 }
 
+// returns the index a given item would have if it were flat. Ex. flatIndex([[0, 1, 2], [3, 4], [5, 6, 7]]), 2, 1) -> 6 
+function flatIndex(arr: Array<Array<any>>, i: number, j: number): number {
+    var returnVal = 0;
+    for (let a = 0; a < i; a++) {
+        returnVal += arr[a].length;
+    }
+    returnVal += j;
+    return returnVal;
+}
+
 
 export default function Article(props: {
     children: string,
     sentenceHighlight: number
 }) {
-    const intermediateText = "        " + replaceAll(props.children, "\n", "\n        ");
-    const sentences = splitIntoSentences(intermediateText);
+    // result: a 2d array where a row is a paragraph and an entry is a sentence
+    const paragraphs = ("    " + props.children).split("\n").map(splitIntoSentences);
 
     return ( <div className="shadow-lg">
-        <div className="bg-white border-2 border-black m-4 mx-auto p-10 max-w-[850px] max-h-[700px] whitespace-pre-wrap overflow-y-auto">
+        <div className="bg-white border-2 border-black m-4 mx-auto p-10 max-w-[850px] max-h-[700px] whitespace-pre-wrap overflow-y-auto rounded-lg">
             {
-                sentences.map(
-                    (sentence, i) =>
-                    <ArticleSentence text={sentence} highlighted={i == props.sentenceHighlight} key={i}/>
+                paragraphs.map(
+                    (paragraph, i) => 
+                    <div className="whitespace-pre-wrap" key={i}>
+                        {paragraph.map(
+                            (sentence, j) =>
+                            <ArticleSentence text={sentence} highlighted={flatIndex(paragraphs, i, j) == props.sentenceHighlight} key={j}/>
+                        )}
+                    </div>
                 )
             }
         </div>

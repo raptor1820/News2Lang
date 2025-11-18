@@ -11,9 +11,9 @@ export default function VocabList(
         setSentenceHighlight : (sentence: number) => void
     },
 ) {
-    return ( <div className="flex flex-col w-1/3">
+    return ( <div className="flex flex-col w-full">
         <p className="text-black text-2xl text-center mb-1">Vocabulary</p>
-        <div className="grow justify-center p-5 bg-gray-200 border-y-4 border-y-blue-500 shadow-md">
+        <div className="grow justify-center p-5 bg-gray-100 rounded-lg shadow">
             <ul className="grid gap-4 grid-cols-[repeat(auto-fill,250px)] justify-center">
                 {
                     props.list.map(

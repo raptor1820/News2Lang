@@ -12,7 +12,7 @@ export default function Word(props : {
 }) {
     const es = props.word.target;
     return <div
-        className="flex justify-between bg-white hover:bg-[yellow] border-2 border-blue-300 m-2 p-2 px-4 line-clamp-1 rounded-2xl shadow-lg cursor-default"
+        className="flex justify-between bg-white hover:bg-yellow-100 border border-gray-300 m-2 p-2 px-4 line-clamp-1 rounded-xl shadow cursor-default"
         onMouseEnter={props.onHoverStart}
         onMouseLeave={props.onHoverEnd}
     >
