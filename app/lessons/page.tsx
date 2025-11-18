@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function LessonsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -12,9 +14,11 @@ export default function LessonsPage() {
             </p>
             <div className="flex justify-between items-center">
               <span className="text-sm text-gray-500">Beginner</span>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
-                Start Lesson
-              </button>
+              <Link href="/lessons/1">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                  Start Lesson
+                </button>
+              </Link>
             </div>
           </div>
           
@@ -25,9 +29,11 @@ export default function LessonsPage() {
             </p>
             <div className="flex justify-between items-center">
               <span className="text-sm text-gray-500">Intermediate</span>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
-                Start Lesson
-              </button>
+              <Link href="/lessons/2">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                  Start Lesson
+                </button>
+              </Link>
             </div>
           </div>
           
@@ -38,9 +44,11 @@ export default function LessonsPage() {
             </p>
             <div className="flex justify-between items-center">
               <span className="text-sm text-gray-500">Advanced</span>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
-                Start Lesson
-              </button>
+              <Link href="/lessons/3">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                  Start Lesson
+                </button>
+              </Link>
             </div>
           </div>
         </div>
